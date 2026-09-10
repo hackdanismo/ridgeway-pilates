@@ -1,10 +1,17 @@
 <!DOCTYPE html>
+<html lang="en-GB">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+
+    <meta
+        name="description"
+        content="Ridgeway Pilates offers welcoming Pilates classes in East Hendred, Oxfordshire."
+    >
+
     <!-- Browser -->
-    <meta name="theme-color" content="#fff">
+    <meta name="theme-color" content="#fff8f0">
 
     <title>Ridgeway Pilates</title>
 
@@ -17,18 +24,31 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="dist/styles/style.css">
-    
-    <!-- Open Graph (OG) -->
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Ridgeway Pilates">
-    <meta property="og:description" content="">
+    <meta
+        property="og:description"
+        content="Welcoming Pilates classes in East Hendred, Oxfordshire."
+    >
     <meta property="og:url" content="https://ridgewaypilates.co.uk">
-    <meta property="og:image" content="https://ridgewaypilates.co.uk/images/social-card.png">
+    <meta
+        property="og:image"
+        content="https://ridgewaypilates.co.uk/images/social-card.png"
+    >
+
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Ridgeway Pilates">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="https://ridgewaypilates.co.uk/images/social-card.png">
+    <meta
+        name="twitter:description"
+        content="Welcoming Pilates classes in East Hendred, Oxfordshire."
+    >
+    <meta
+        name="twitter:image"
+        content="https://ridgewaypilates.co.uk/images/social-card.png"
+    >
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -61,171 +81,1367 @@
         }
     </script>
 
+    <!-- Scripts -->
     <script src="src/scripts/header.js" defer></script>
+    <script src="src/scripts/accordion.js" defer></script>
 </head>
+
 <body class="bg-ridgeway-cream text-ridgeway-aubergine">
-<header
-    id="site-header"
-    class="
-        fixed
-        top-0
-        left-0
-        z-50
-        py-4
-        w-full
-        bg-ridgeway-cream
-        transition-transform
-        duration-300
-        ease-in-out
-    "
->
-    <div class="container">
-        <nav>
-            <ul>
-                <li>
-                    <a href="">About</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
-    <main role="main" id="home">
+
+    <!-- Header -->
+    <header
+        id="site-header"
+        class="
+            fixed
+            left-0
+            top-0
+            z-50
+            w-full
+            bg-ridgeway-cream
+            py-4
+            transition-transform
+            duration-300
+            ease-in-out
+        "
+    >
+        <div class="container">
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#about">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#about">FAQ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- / Header -->
+
+
+    <main id="home">
+
         <!-- Hero -->
-        <section class="min-h-[600px] bg-[url('../images/hero-image.webp')] bg-cover bg-center bg-no-repeat">
+        <section
+            class="
+                min-h-[600px]
+                bg-[url('../images/hero-image.webp')]
+                bg-cover
+                bg-center
+                bg-no-repeat
+            "
+        >
         </section>
-        <!-- / END: Hero -->
+        <!-- / Hero -->
+
+
+        <!-- Pricing + FAQs -->
+        <section
+            id="faq"
+            class="bg-ridgeway-cream py-20 text-ridgeway-ink lg:py-28"
+        >
+            <div class="container mx-auto">
+
+                <div
+                    class="
+                        grid
+                        gap-16
+                        lg:grid-cols-[0.9fr_1.1fr]
+                        lg:items-start
+                        lg:gap-20
+                    "
+                >
+
+                    <!-- =========================
+                         LEFT: PRICING
+                    ========================== -->
+                    <div
+                        id="pricing"
+                        class="lg:sticky lg:top-28 lg:self-start"
+                    >
+
+                        <!-- Pricing heading -->
+                        <div class="mb-8">
+
+                            <p
+                                class="
+                                    mb-3
+                                    text-xs
+                                    font-semibold
+                                    uppercase
+                                    tracking-[0.3em]
+                                    text-ridgeway-rose
+                                "
+                            >
+                                Pricing
+                            </p>
+
+                            <h2
+                                class="
+                                    font-serif
+                                    text-4xl
+                                    leading-tight
+                                    text-ridgeway-aubergine
+                                    md:text-5xl
+                                "
+                            >
+                                Find the right way to move
+                            </h2>
+
+                            <p
+                                class="
+                                    mt-4
+                                    max-w-lg
+                                    leading-7
+                                    text-ridgeway-ink/70
+                                "
+                            >
+                                Choose the option that best suits how often
+                                you would like to practise. If you're not sure
+                                where to start, Julia will be happy to help.
+                            </p>
+
+                        </div>
+
+
+                        <!-- Pricing tabs -->
+                        <div
+                            class="
+                                mb-7
+                                inline-flex
+                                max-w-full
+                                flex-wrap
+                                gap-1
+                                rounded-full
+                                bg-ridgeway-peach/25
+                                p-1.5
+                            "
+                            role="tablist"
+                            aria-label="Pricing options"
+                        >
+
+                            <button
+                                type="button"
+                                role="tab"
+                                aria-selected="true"
+                                data-pricing-tab="classes"
+                                class="
+                                    pricing-tab
+                                    cursor-pointer
+                                    rounded-full
+                                    bg-ridgeway-plum
+                                    px-5
+                                    py-2.5
+                                    text-sm
+                                    font-medium
+                                    text-white
+                                    transition-colors
+                                "
+                            >
+                                Classes
+                            </button>
+
+                            <button
+                                type="button"
+                                role="tab"
+                                aria-selected="false"
+                                data-pricing-tab="private"
+                                class="
+                                    pricing-tab
+                                    cursor-pointer
+                                    rounded-full
+                                    px-5
+                                    py-2.5
+                                    text-sm
+                                    font-medium
+                                    text-ridgeway-aubergine
+                                    transition-colors
+                                "
+                            >
+                                Private
+                            </button>
+
+                            <button
+                                type="button"
+                                role="tab"
+                                aria-selected="false"
+                                data-pricing-tab="passes"
+                                class="
+                                    pricing-tab
+                                    cursor-pointer
+                                    rounded-full
+                                    px-5
+                                    py-2.5
+                                    text-sm
+                                    font-medium
+                                    text-ridgeway-aubergine
+                                    transition-colors
+                                "
+                            >
+                                Passes
+                            </button>
+
+                        </div>
+
+
+                        <!-- Pricing panels -->
+                        <div aria-live="polite">
+
+                            <!-- Classes -->
+                            <div
+                                class="pricing-panel grid gap-4"
+                                data-pricing-panel="classes"
+                            >
+
+                                <article
+                                    class="
+                                        rounded-2xl
+                                        border
+                                        border-ridgeway-aubergine/10
+                                        bg-white
+                                        p-6
+                                    "
+                                >
+                                    <div
+                                        class="
+                                            flex
+                                            items-start
+                                            justify-between
+                                            gap-6
+                                        "
+                                    >
+
+                                        <div>
+                                            <p
+                                                class="
+                                                    text-xs
+                                                    font-semibold
+                                                    uppercase
+                                                    tracking-[0.2em]
+                                                    text-ridgeway-rose
+                                                "
+                                            >
+                                                Drop in
+                                            </p>
+
+                                            <h3
+                                                class="
+                                                    mt-2
+                                                    font-serif
+                                                    text-2xl
+                                                    text-ridgeway-aubergine
+                                                "
+                                            >
+                                                Single class
+                                            </h3>
+
+                                            <p
+                                                class="
+                                                    mt-2
+                                                    max-w-xs
+                                                    text-sm
+                                                    leading-6
+                                                    text-ridgeway-ink/60
+                                                "
+                                            >
+                                                Perfect if you'd like the
+                                                flexibility to join when it
+                                                suits you.
+                                            </p>
+                                        </div>
+
+                                        <div class="shrink-0 text-right">
+                                            <span
+                                                class="
+                                                    font-serif
+                                                    text-4xl
+                                                    text-ridgeway-aubergine
+                                                "
+                                            >
+                                                £14
+                                            </span>
+
+                                            <span
+                                                class="
+                                                    block
+                                                    text-xs
+                                                    text-ridgeway-ink/50
+                                                "
+                                            >
+                                                per class
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </article>
+
+
+                                <article
+                                    class="
+                                        relative
+                                        overflow-hidden
+                                        rounded-2xl
+                                        bg-ridgeway-plum
+                                        p-6
+                                        text-white
+                                    "
+                                >
+                                    <span
+                                        class="
+                                            absolute
+                                            right-5
+                                            top-5
+                                            rounded-full
+                                            bg-ridgeway-peach
+                                            px-3
+                                            py-1
+                                            text-[10px]
+                                            font-semibold
+                                            uppercase
+                                            tracking-[0.15em]
+                                            text-ridgeway-aubergine
+                                        "
+                                    >
+                                        Popular
+                                    </span>
+
+                                    <div
+                                        class="
+                                            flex
+                                            items-start
+                                            justify-between
+                                            gap-6
+                                            pr-20
+                                        "
+                                    >
+
+                                        <div>
+                                            <p
+                                                class="
+                                                    text-xs
+                                                    font-semibold
+                                                    uppercase
+                                                    tracking-[0.2em]
+                                                    text-ridgeway-peach
+                                                "
+                                            >
+                                                Regular
+                                            </p>
+
+                                            <h3
+                                                class="mt-2 font-serif text-2xl"
+                                            >
+                                                4 classes
+                                            </h3>
+
+                                            <p
+                                                class="
+                                                    mt-2
+                                                    max-w-xs
+                                                    text-sm
+                                                    leading-6
+                                                    text-white/70
+                                                "
+                                            >
+                                                A simple way to build Pilates
+                                                into your weekly routine.
+                                            </p>
+                                        </div>
+
+                                        <div class="shrink-0 text-right">
+                                            <span class="font-serif text-4xl">
+                                                £48
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </article>
+
+                            </div>
+
+
+                            <!-- Private sessions -->
+                            <div
+                                class="pricing-panel hidden grid gap-4"
+                                data-pricing-panel="private"
+                            >
+
+                                <article
+                                    class="
+                                        rounded-2xl
+                                        border
+                                        border-ridgeway-aubergine/10
+                                        bg-white
+                                        p-6
+                                    "
+                                >
+                                    <div
+                                        class="
+                                            flex
+                                            items-start
+                                            justify-between
+                                            gap-6
+                                        "
+                                    >
+
+                                        <div>
+                                            <p
+                                                class="
+                                                    text-xs
+                                                    font-semibold
+                                                    uppercase
+                                                    tracking-[0.2em]
+                                                    text-ridgeway-rose
+                                                "
+                                            >
+                                                One-to-one
+                                            </p>
+
+                                            <h3
+                                                class="
+                                                    mt-2
+                                                    font-serif
+                                                    text-2xl
+                                                    text-ridgeway-aubergine
+                                                "
+                                            >
+                                                Private session
+                                            </h3>
+
+                                            <p
+                                                class="
+                                                    mt-2
+                                                    max-w-xs
+                                                    text-sm
+                                                    leading-6
+                                                    text-ridgeway-ink/60
+                                                "
+                                            >
+                                                Personalised Pilates with
+                                                individual guidance and support.
+                                            </p>
+                                        </div>
+
+                                        <div class="shrink-0 text-right">
+                                            <span
+                                                class="
+                                                    font-serif
+                                                    text-4xl
+                                                    text-ridgeway-aubergine
+                                                "
+                                            >
+                                                £55
+                                            </span>
+
+                                            <span
+                                                class="
+                                                    block
+                                                    text-xs
+                                                    text-ridgeway-ink/50
+                                                "
+                                            >
+                                                60 mins
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </article>
+
+
+                                <article
+                                    class="
+                                        rounded-2xl
+                                        bg-ridgeway-peach/20
+                                        p-6
+                                    "
+                                >
+                                    <div
+                                        class="
+                                            flex
+                                            items-start
+                                            justify-between
+                                            gap-6
+                                        "
+                                    >
+
+                                        <div>
+                                            <p
+                                                class="
+                                                    text-xs
+                                                    font-semibold
+                                                    uppercase
+                                                    tracking-[0.2em]
+                                                    text-ridgeway-rose
+                                                "
+                                            >
+                                                Package
+                                            </p>
+
+                                            <h3
+                                                class="
+                                                    mt-2
+                                                    font-serif
+                                                    text-2xl
+                                                    text-ridgeway-aubergine
+                                                "
+                                            >
+                                                5 private sessions
+                                            </h3>
+
+                                            <p
+                                                class="
+                                                    mt-2
+                                                    max-w-xs
+                                                    text-sm
+                                                    leading-6
+                                                    text-ridgeway-ink/60
+                                                "
+                                            >
+                                                Ideal for building confidence
+                                                and making steady progress.
+                                            </p>
+                                        </div>
+
+                                        <div class="shrink-0 text-right">
+                                            <span
+                                                class="
+                                                    font-serif
+                                                    text-4xl
+                                                    text-ridgeway-aubergine
+                                                "
+                                            >
+                                                £250
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </article>
+
+                            </div>
+
+
+                            <!-- Class passes -->
+                            <div
+                                class="pricing-panel hidden grid gap-4"
+                                data-pricing-panel="passes"
+                            >
+
+                                <article
+                                    class="
+                                        rounded-2xl
+                                        border
+                                        border-ridgeway-aubergine/10
+                                        bg-white
+                                        p-6
+                                    "
+                                >
+                                    <div
+                                        class="
+                                            flex
+                                            items-start
+                                            justify-between
+                                            gap-6
+                                        "
+                                    >
+
+                                        <div>
+                                            <p
+                                                class="
+                                                    text-xs
+                                                    font-semibold
+                                                    uppercase
+                                                    tracking-[0.2em]
+                                                    text-ridgeway-rose
+                                                "
+                                            >
+                                                Flexible
+                                            </p>
+
+                                            <h3
+                                                class="
+                                                    mt-2
+                                                    font-serif
+                                                    text-2xl
+                                                    text-ridgeway-aubergine
+                                                "
+                                            >
+                                                5 class pass
+                                            </h3>
+
+                                            <p
+                                                class="
+                                                    mt-2
+                                                    max-w-xs
+                                                    text-sm
+                                                    leading-6
+                                                    text-ridgeway-ink/60
+                                                "
+                                            >
+                                                Five classes to use across the
+                                                available timetable.
+                                            </p>
+                                        </div>
+
+                                        <div class="shrink-0 text-right">
+                                            <span
+                                                class="
+                                                    font-serif
+                                                    text-4xl
+                                                    text-ridgeway-aubergine
+                                                "
+                                            >
+                                                £60
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </article>
+
+
+                                <article
+                                    class="
+                                        rounded-2xl
+                                        border
+                                        border-ridgeway-aubergine/10
+                                        bg-white
+                                        p-6
+                                    "
+                                >
+                                    <div
+                                        class="
+                                            flex
+                                            items-start
+                                            justify-between
+                                            gap-6
+                                        "
+                                    >
+
+                                        <div>
+                                            <p
+                                                class="
+                                                    text-xs
+                                                    font-semibold
+                                                    uppercase
+                                                    tracking-[0.2em]
+                                                    text-ridgeway-rose
+                                                "
+                                            >
+                                                Best value
+                                            </p>
+
+                                            <h3
+                                                class="
+                                                    mt-2
+                                                    font-serif
+                                                    text-2xl
+                                                    text-ridgeway-aubergine
+                                                "
+                                            >
+                                                10 class pass
+                                            </h3>
+
+                                            <p
+                                                class="
+                                                    mt-2
+                                                    max-w-xs
+                                                    text-sm
+                                                    leading-6
+                                                    text-ridgeway-ink/60
+                                                "
+                                            >
+                                                For those making Pilates a
+                                                regular part of their routine.
+                                            </p>
+                                        </div>
+
+                                        <div class="shrink-0 text-right">
+                                            <span
+                                                class="
+                                                    font-serif
+                                                    text-4xl
+                                                    text-ridgeway-aubergine
+                                                "
+                                            >
+                                                £110
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </article>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Pricing CTA -->
+                        <div
+                            class="
+                                mt-6
+                                flex
+                                items-center
+                                justify-between
+                                gap-5
+                                rounded-2xl
+                                bg-ridgeway-aubergine/5
+                                p-5
+                            "
+                        >
+                            <p
+                                class="
+                                    max-w-sm
+                                    text-sm
+                                    leading-6
+                                    text-ridgeway-ink/70
+                                "
+                            >
+                                Not sure which option is right for you?
+                            </p>
+
+                            <a
+                                href="mailto:hello@ridgewaypilates.co.uk"
+                                class="
+                                    shrink-0
+                                    font-medium
+                                    text-ridgeway-plum
+                                    hover:text-ridgeway-aubergine
+                                "
+                            >
+                                Ask Julia →
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- / LEFT: PRICING -->
+
+
+                    <!-- =========================
+                         RIGHT: FAQ
+                    ========================== -->
+                    <div>
+
+                        <!-- FAQ heading -->
+                        <div class="mb-10">
+
+                            <p
+                                class="
+                                    mb-3
+                                    text-xs
+                                    font-semibold
+                                    uppercase
+                                    tracking-[0.3em]
+                                    text-ridgeway-rose
+                                "
+                            >
+                                Need to know
+                            </p>
+
+                            <h2
+                                class="
+                                    max-w-xl
+                                    font-serif
+                                    text-4xl
+                                    leading-[0.95]
+                                    text-ridgeway-aubergine
+                                    md:text-4xl
+                                "
+                            >
+                                Frequently asked questions
+                            </h2>
+
+                            <p
+                                class="
+                                    mt-6
+                                    max-w-xl
+                                    leading-7
+                                    text-ridgeway-ink/70
+                                "
+                            >
+                                Find answers to common questions about
+                                classes, what to expect, and getting started
+                                with Ridgeway Pilates. If there's anything
+                                else you'd like to know, just get in touch.
+                            </p>
+
+                        </div>
+
+
+                        <!-- Accordion -->
+                        <div
+                            class="
+                                border-t
+                                border-ridgeway-aubergine/15
+                            "
+                        >
+
+                            <!-- Item -->
+                            <div
+                                class="
+                                    faq-item
+                                    border-b
+                                    border-ridgeway-aubergine/15
+                                "
+                            >
+                                <button
+                                    type="button"
+                                    class="
+                                        faq-trigger
+                                        flex
+                                        w-full
+                                        cursor-pointer
+                                        items-center
+                                        justify-between
+                                        gap-8
+                                        py-8
+                                        text-left
+                                    "
+                                    aria-expanded="false"
+                                >
+
+                                    <h3
+                                        class="
+                                            font-serif
+                                            text-2xl
+                                            leading-tight
+                                            text-ridgeway-aubergine
+                                        "
+                                    >
+                                        What should I bring to a Pilates class?
+                                    </h3>
+
+                                    <span
+                                        class="
+                                            flex
+                                            h-9
+                                            w-9
+                                            shrink-0
+                                            items-center
+                                            justify-center
+                                            rounded-full
+                                            border
+                                            border-ridgeway-aubergine/20
+                                        "
+                                    >
+                                        <svg
+                                            class="
+                                                faq-icon
+                                                h-4
+                                                w-4
+                                                transition-transform
+                                                duration-300
+                                            "
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            aria-hidden="true"
+                                        >
+                                            <path d="m6 9 6 6 6-6" />
+                                        </svg>
+                                    </span>
+
+                                </button>
+
+                                <div
+                                    class="
+                                        faq-content
+                                        max-h-0
+                                        overflow-hidden
+                                        opacity-0
+                                        transition-all
+                                        duration-500
+                                        ease-in-out
+                                    "
+                                >
+                                    <div
+                                        class="
+                                            max-w-2xl
+                                            pb-8
+                                            pr-12
+                                            leading-7
+                                            text-ridgeway-ink/70
+                                        "
+                                    >
+                                        Wear comfortable clothing that allows
+                                        you to move freely. Any equipment you
+                                        need will be provided unless stated
+                                        otherwise.
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Item -->
+                            <div
+                                class="
+                                    faq-item
+                                    border-b
+                                    border-ridgeway-aubergine/15
+                                "
+                            >
+                                <button
+                                    type="button"
+                                    class="
+                                        faq-trigger
+                                        flex
+                                        w-full
+                                        cursor-pointer
+                                        items-center
+                                        justify-between
+                                        gap-8
+                                        py-8
+                                        text-left
+                                    "
+                                    aria-expanded="false"
+                                >
+
+                                    <h3
+                                        class="
+                                            font-serif
+                                            text-2xl
+                                            leading-tight
+                                            text-ridgeway-aubergine
+                                        "
+                                    >
+                                        Are your classes suitable for beginners?
+                                    </h3>
+
+                                    <span
+                                        class="
+                                            flex
+                                            h-9
+                                            w-9
+                                            shrink-0
+                                            items-center
+                                            justify-center
+                                            rounded-full
+                                            border
+                                            border-ridgeway-aubergine/20
+                                        "
+                                    >
+                                        <svg
+                                            class="
+                                                faq-icon
+                                                h-4
+                                                w-4
+                                                transition-transform
+                                                duration-300
+                                            "
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            aria-hidden="true"
+                                        >
+                                            <path d="m6 9 6 6 6-6" />
+                                        </svg>
+                                    </span>
+
+                                </button>
+
+                                <div
+                                    class="
+                                        faq-content
+                                        max-h-0
+                                        overflow-hidden
+                                        opacity-0
+                                        transition-all
+                                        duration-500
+                                        ease-in-out
+                                    "
+                                >
+                                    <div
+                                        class="
+                                            max-w-2xl
+                                            pb-8
+                                            pr-12
+                                            leading-7
+                                            text-ridgeway-ink/70
+                                        "
+                                    >
+                                        Yes. Classes can be adapted for
+                                        different experience levels, and
+                                        beginners are very welcome.
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Item -->
+                            <div
+                                class="
+                                    faq-item
+                                    border-b
+                                    border-ridgeway-aubergine/15
+                                "
+                            >
+                                <button
+                                    type="button"
+                                    class="
+                                        faq-trigger
+                                        flex
+                                        w-full
+                                        cursor-pointer
+                                        items-center
+                                        justify-between
+                                        gap-8
+                                        py-8
+                                        text-left
+                                    "
+                                    aria-expanded="false"
+                                >
+
+                                    <h3
+                                        class="
+                                            font-serif
+                                            text-2xl
+                                            leading-tight
+                                            text-ridgeway-aubergine
+                                        "
+                                    >
+                                        Where are Ridgeway Pilates classes held?
+                                    </h3>
+
+                                    <span
+                                        class="
+                                            flex
+                                            h-9
+                                            w-9
+                                            shrink-0
+                                            items-center
+                                            justify-center
+                                            rounded-full
+                                            border
+                                            border-ridgeway-aubergine/20
+                                        "
+                                    >
+                                        <svg
+                                            class="
+                                                faq-icon
+                                                h-4
+                                                w-4
+                                                transition-transform
+                                                duration-300
+                                            "
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            aria-hidden="true"
+                                        >
+                                            <path d="m6 9 6 6 6-6" />
+                                        </svg>
+                                    </span>
+
+                                </button>
+
+                                <div
+                                    class="
+                                        faq-content
+                                        max-h-0
+                                        overflow-hidden
+                                        opacity-0
+                                        transition-all
+                                        duration-500
+                                        ease-in-out
+                                    "
+                                >
+                                    <div
+                                        class="
+                                            max-w-2xl
+                                            pb-8
+                                            pr-12
+                                            leading-7
+                                            text-ridgeway-ink/70
+                                        "
+                                    >
+                                        Classes are based in and around East
+                                        Hendred, Oxfordshire. Exact venue
+                                        details can be provided when booking.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- / Accordion -->
+
+                    </div>
+                    <!-- / RIGHT: FAQ -->
+
+                </div>
+
+            </div>
+        </section>
+        <!-- / Pricing + FAQs -->
+
 
         <!-- Banner -->
-        <section class="min-h-[400px] bg-[url('../images/ridgeway-pilates-sunset-desktop.webp')] bg-cover bg-center">
+        <section
+            class="
+                min-h-[400px]
+                bg-[url('../images/ridgeway-pilates-sunset-desktop.webp')]
+                bg-cover
+                bg-center
+            "
+        >
         </section>
-        <!-- / END: Banner -->
+        <!-- / Banner -->
+
     </main>
 
-<footer class="bg-ridgeway-aubergine text-ridgeway-cream">
-    <div class="container py-12">
 
-        <!-- Top footer -->
-        <div
-            class="grid gap-10
-                   md:grid-cols-2
-                   lg:grid-cols-[1.3fr_1.6fr_1.4fr_.7fr_1.3fr]
-                   lg:items-center"
-        >
+    <!-- Footer -->
+    <footer class="bg-ridgeway-aubergine text-ridgeway-cream">
+        <div class="container py-12">
 
-            <!-- Brand -->
-            <div>
-                <img
-                    src="dist/images/ridgeway-logo.svg"
-                    alt="Ridgeway Pilates"
-                    class="w-44 h-auto"
-                >
-            </div>
-
-            <!-- Contact -->
-            <div class="footer__top-contact flex flex-col gap-3 text-sm">
-                <p><img src="dist/images/location-pin-icon.svg" width="22" height="22" alt=""> East Hendred, Wantage, Oxfordshire</p>
-
-                <a
-                    href="mailto:hello@ridgewaypilates.co.uk"
-                    class="transition hover:text-white"
-                >
-                    <img src="dist/images/mail-icon.svg" width="22" height="22" alt="">
-                    hello@ridgewaypilates.co.uk
-                </a>
-            </div>
-
-            <!-- Navigation -->
-            <nav
-                aria-label="Footer navigation"
-                class="grid grid-cols-2 gap-8 lg:border-l lg:border-white/30 lg:pl-8"
+            <!-- Top footer -->
+            <div
+                class="
+                    grid
+                    gap-10
+                    md:grid-cols-2
+                    lg:grid-cols-[1.3fr_1.6fr_1.4fr_.7fr_1.3fr]
+                    lg:items-center
+                "
             >
-                <div class="flex flex-col gap-3 text-sm">
-                    <a href="#" class="hover:text-white">Home</a>
-                    <a href="#" class="hover:text-white">About</a>
-                    <a href="#" class="hover:text-white">Classes</a>
+
+                <!-- Brand -->
+                <div>
+                    <img
+                        src="dist/images/ridgeway-logo.svg"
+                        alt="Ridgeway Pilates"
+                        class="h-auto w-44"
+                    >
                 </div>
 
+
+                <!-- Contact -->
                 <div class="flex flex-col gap-3 text-sm">
-                    <a href="#" class="hover:text-white">Pricing</a>
-                    <a href="#" class="hover:text-white">FAQ</a>
-                    <a href="#" class="hover:text-white">Contact</a>
+
+                    <p class="flex items-center gap-3">
+                        <img
+                            src="dist/images/location-pin-icon.svg"
+                            width="22"
+                            height="22"
+                            alt=""
+                        >
+                        East Hendred, Wantage, Oxfordshire
+                    </p>
+
+                    <a
+                        href="mailto:hello@ridgewaypilates.co.uk"
+                        class="
+                            flex
+                            items-center
+                            gap-3
+                            transition
+                            hover:text-white
+                        "
+                    >
+                        <img
+                            src="dist/images/mail-icon.svg"
+                            width="22"
+                            height="22"
+                            alt=""
+                        >
+
+                        hello@ridgewaypilates.co.uk
+                    </a>
+
                 </div>
-            </nav>
 
-            <!-- Socials -->
-            <div class="footer__top-socials">
-                <a
-                    href="https://www.instagram.com/ridgewaypilates/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Ridgeway Pilates on Instagram"
-                    class="transition hover:opacity-75"
-                >
-                    <img
-                        src="dist/images/instagram-icon.svg"
-                        width="26"
-                        height="26"
-                        alt=""
-                    >
-                </a>
 
-                <a
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Ridgeway Pilates on Facebook"
-                    class="transition hover:opacity-75"
+                <!-- Footer navigation -->
+                <nav
+                    aria-label="Footer navigation"
+                    class="
+                        grid
+                        grid-cols-2
+                        gap-8
+                        lg:border-l
+                        lg:border-white/30
+                        lg:pl-8
+                    "
                 >
-                    <img
-                        src="dist/images/facebook-icon.svg"
-                        width="24"
-                        height="24"
-                        alt=""
+
+                    <div class="flex flex-col gap-3 text-sm">
+                        <a href="#home" class="hover:text-white">Home</a>
+                        <a href="#about" class="hover:text-white">About</a>
+                        <a href="#classes" class="hover:text-white">Classes</a>
+                    </div>
+
+                    <div class="flex flex-col gap-3 text-sm">
+                        <a href="#pricing" class="hover:text-white">Pricing</a>
+                        <a href="#faq" class="hover:text-white">FAQ</a>
+                        <a href="#contact" class="hover:text-white">Contact</a>
+                    </div>
+
+                </nav>
+
+
+                <!-- Socials -->
+                <div class="flex items-center gap-4">
+
+                    <a
+                        href="https://www.instagram.com/ridgewaypilates/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ridgeway Pilates on Instagram"
+                        class="transition hover:opacity-75"
                     >
-                </a>
+                        <img
+                            src="dist/images/instagram-icon.svg"
+                            width="26"
+                            height="26"
+                            alt=""
+                        >
+                    </a>
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ridgeway Pilates on Facebook"
+                        class="transition hover:opacity-75"
+                    >
+                        <img
+                            src="dist/images/facebook-icon.svg"
+                            width="24"
+                            height="24"
+                            alt=""
+                        >
+                    </a>
+
+                </div>
+
+
+                <!-- Tagline -->
+                <div class="flex flex-col text-lg italic leading-tight">
+                    <span>Movement</span>
+                    <span>for a brighter tomorrow</span>
+                </div>
+
             </div>
 
-            <!-- Tagline -->
-            <div class="flex flex-col text-lg italic leading-tight">
-                <span>Movement</span>
-                <span>for a brighter tomorrow</span>
+
+            <!-- Bottom footer -->
+            <div
+                class="
+                    mt-10
+                    flex
+                    flex-col
+                    gap-4
+                    border-t
+                    border-white/20
+                    pt-6
+                    text-sm
+                    md:flex-row
+                    md:items-center
+                    md:justify-between
+                "
+            >
+
+                <span>
+                    &copy; 2026 Ridgeway Pilates. All rights reserved.
+                </span>
+
+                <div class="flex flex-wrap items-center gap-4">
+
+                    <a href="#" class="hover:text-white">
+                        Privacy Policy
+                    </a>
+
+                    <span class="opacity-40">|</span>
+
+                    <a href="#" class="hover:text-white">
+                        Terms
+                    </a>
+
+                    <span class="opacity-40">|</span>
+
+                    <a
+                        href="https://danjacksonweb.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:text-white"
+                    >
+                        Website by Dan Jackson
+                    </a>
+
+                </div>
+
             </div>
 
         </div>
+    </footer>
+    <!-- / Footer -->
 
-        <!-- Bottom footer -->
-        <div
-            class="mt-10 flex flex-col gap-4 border-t border-white/20 pt-6
-                   text-sm
-                   md:flex-row md:items-center md:justify-between"
-        >
-            <span>&copy; 2026 Ridgeway Pilates. All rights reserved.</span>
 
-            <div class="flex flex-wrap items-center gap-4">
-                <a href="#" class="hover:text-white">
-                    Privacy Policy
-                </a>
+    <!-- Pricing tabs -->
+    <script>
+        const pricingTabs = document.querySelectorAll('[data-pricing-tab]');
+        const pricingPanels = document.querySelectorAll('[data-pricing-panel]');
 
-                <span class="opacity-40">|</span>
+        pricingTabs.forEach((tab) => {
+            tab.addEventListener('click', () => {
 
-                <a href="#" class="hover:text-white">
-                    Terms
-                </a>
+                const selectedPanel = tab.dataset.pricingTab;
 
-                <span class="opacity-40">|</span>
+                /*
+                 * Reset all tabs.
+                 */
+                pricingTabs.forEach((item) => {
+                    item.setAttribute('aria-selected', 'false');
 
-                <a
-                    href="https://danjacksonweb.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="hover:text-white"
-                >
-                    Website by Dan Jackson
-                </a>
-            </div>
-        </div>
+                    item.classList.remove(
+                        'bg-ridgeway-plum',
+                        'text-white'
+                    );
 
-    </div>
-</footer>
+                    item.classList.add(
+                        'text-ridgeway-aubergine'
+                    );
+                });
+
+                /*
+                 * Activate selected tab.
+                 */
+                tab.setAttribute('aria-selected', 'true');
+
+                tab.classList.remove(
+                    'text-ridgeway-aubergine'
+                );
+
+                tab.classList.add(
+                    'bg-ridgeway-plum',
+                    'text-white'
+                );
+
+                /*
+                 * Change visible panel.
+                 */
+                pricingPanels.forEach((panel) => {
+
+                    if (
+                        panel.dataset.pricingPanel === selectedPanel
+                    ) {
+                        panel.classList.remove('hidden');
+                    } else {
+                        panel.classList.add('hidden');
+                    }
+
+                });
+
+            });
+        });
+    </script>
+
 </body>
 </html>
