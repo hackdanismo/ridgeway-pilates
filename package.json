@@ -20,5 +20,8 @@
   "homepage": "https://github.com/hackdanismo/ridgeway-pilates#readme",
   "devDependencies": {
     "tailwindcss": "^4.3.3"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3"
   }
 }
