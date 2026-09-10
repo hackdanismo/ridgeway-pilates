@@ -60,17 +60,35 @@
             ]
         }
     </script>
+
+    <script src="src/scripts/header.js" defer></script>
 </head>
 <body class="bg-ridgeway-cream text-ridgeway-aubergine">
-    <header role="banner">
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="">About</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<header
+    id="site-header"
+    class="
+        fixed
+        top-0
+        left-0
+        z-50
+        py-4
+        w-full
+        bg-ridgeway-cream
+        transition-transform
+        duration-300
+        ease-in-out
+    "
+>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
     <main role="main" id="home">
         <!-- Hero -->
         <section class="min-h-[600px] bg-[url('../images/hero-image.webp')] bg-cover bg-center bg-no-repeat">
