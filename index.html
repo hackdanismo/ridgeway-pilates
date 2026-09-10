@@ -63,7 +63,13 @@
 </head>
 <body class="bg-ridgeway-cream text-ridgeway-aubergine">
     <header role="banner">
-        <!-- Header -->
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="">About</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main role="main" id="home">
         <!-- Hero -->
@@ -77,8 +83,131 @@
         <!-- / END: Banner -->
     </main>
 
-    <footer>
-        <!-- Footer-->
-    </footer>
+<footer class="bg-ridgeway-aubergine text-ridgeway-cream">
+    <div class="container py-12">
+
+        <!-- Top footer -->
+        <div
+            class="grid gap-10
+                   md:grid-cols-2
+                   lg:grid-cols-[1.3fr_1.6fr_1.4fr_.7fr_1.3fr]
+                   lg:items-center"
+        >
+
+            <!-- Brand -->
+            <div>
+                <img
+                    src="dist/images/ridgeway-logo.svg"
+                    alt="Ridgeway Pilates"
+                    class="w-44 h-auto"
+                >
+            </div>
+
+            <!-- Contact -->
+            <div class="footer__top-contact flex flex-col gap-3 text-sm">
+                <p><img src="dist/images/location-pin-icon.svg" width="22" height="22" alt=""> East Hendred, Wantage, Oxfordshire</p>
+
+                <a
+                    href="mailto:hello@ridgewaypilates.co.uk"
+                    class="transition hover:text-white"
+                >
+                    <img src="dist/images/mail-icon.svg" width="22" height="22" alt="">
+                    hello@ridgewaypilates.co.uk
+                </a>
+            </div>
+
+            <!-- Navigation -->
+            <nav
+                aria-label="Footer navigation"
+                class="grid grid-cols-2 gap-8 lg:border-l lg:border-white/30 lg:pl-8"
+            >
+                <div class="flex flex-col gap-3 text-sm">
+                    <a href="#" class="hover:text-white">Home</a>
+                    <a href="#" class="hover:text-white">About</a>
+                    <a href="#" class="hover:text-white">Classes</a>
+                </div>
+
+                <div class="flex flex-col gap-3 text-sm">
+                    <a href="#" class="hover:text-white">Pricing</a>
+                    <a href="#" class="hover:text-white">FAQ</a>
+                    <a href="#" class="hover:text-white">Contact</a>
+                </div>
+            </nav>
+
+            <!-- Socials -->
+            <div class="footer__top-socials">
+                <a
+                    href="https://www.instagram.com/ridgewaypilates/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Ridgeway Pilates on Instagram"
+                    class="transition hover:opacity-75"
+                >
+                    <img
+                        src="dist/images/instagram-icon.svg"
+                        width="26"
+                        height="26"
+                        alt=""
+                    >
+                </a>
+
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Ridgeway Pilates on Facebook"
+                    class="transition hover:opacity-75"
+                >
+                    <img
+                        src="dist/images/facebook-icon.svg"
+                        width="24"
+                        height="24"
+                        alt=""
+                    >
+                </a>
+            </div>
+
+            <!-- Tagline -->
+            <div class="flex flex-col text-lg italic leading-tight">
+                <span>Movement</span>
+                <span>for a brighter tomorrow</span>
+            </div>
+
+        </div>
+
+        <!-- Bottom footer -->
+        <div
+            class="mt-10 flex flex-col gap-4 border-t border-white/20 pt-6
+                   text-sm
+                   md:flex-row md:items-center md:justify-between"
+        >
+            <span>&copy; 2026 Ridgeway Pilates. All rights reserved.</span>
+
+            <div class="flex flex-wrap items-center gap-4">
+                <a href="#" class="hover:text-white">
+                    Privacy Policy
+                </a>
+
+                <span class="opacity-40">|</span>
+
+                <a href="#" class="hover:text-white">
+                    Terms
+                </a>
+
+                <span class="opacity-40">|</span>
+
+                <a
+                    href="https://danjacksonweb.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="hover:text-white"
+                >
+                    Website by Dan Jackson
+                </a>
+            </div>
+        </div>
+
+    </div>
+</footer>
 </body>
 </html>

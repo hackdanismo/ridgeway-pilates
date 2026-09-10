@@ -24,3 +24,51 @@
     /* Center align the container horizontally. */
     margin-inline: auto;
 }
+
+.footer {
+    padding: 2rem 0;
+}
+
+.footer__top {
+    padding-bottom: 1rem;
+}
+
+.footer__top-socials {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    /* Invert the SVG social icons in the footer as we are using image tags to render the icons. */
+    filter: brightness(0) invert(1);
+}
+
+.footer__top-contact {
+    /* Invert the SVG social icons in the footer as we are using image tags to render the icons. */
+    filter: brightness(0) invert(1);
+}
+
+.footer__top-contact p,
+.footer__top-contact a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer__bottom,
+.footer__bottom-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+.footer__bottom-links {
+    gap: 1.5rem;
+}
+
+.footer__bottom-links a:not(:last-child)::after {
+    content: "|";
+    position: relative;
+    right: -0.75rem;
+    color: currentColor;
+    opacity: 0.5;
+}
