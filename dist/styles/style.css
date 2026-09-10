@@ -165,38 +165,20 @@
   }
 }
 @layer utilities {
-  .container {
-    width: 100%;
-    @media (width >= 40rem) {
-      max-width: 40rem;
-    }
-    @media (width >= 48rem) {
-      max-width: 48rem;
-    }
-    @media (width >= 64rem) {
-      max-width: 64rem;
-    }
-    @media (width >= 80rem) {
-      max-width: 80rem;
-    }
-    @media (width >= 96rem) {
-      max-width: 96rem;
-    }
-  }
   .min-h-\[400px\] {
     min-height: 400px;
+  }
+  .min-h-\[600px\] {
+    min-height: 600px;
   }
   .bg-ridgeway-cream {
     background-color: var(--color-ridgeway-cream);
   }
+  .bg-\[url\(\'\.\.\/images\/hero-image\.webp\'\)\] {
+    background-image: url('../images/hero-image.webp');
+  }
   .bg-\[url\(\'\.\.\/images\/ridgeway-pilates-sunset-desktop\.webp\'\)\] {
     background-image: url('../images/ridgeway-pilates-sunset-desktop.webp');
-  }
-  .bg-\[url\(\'\.\/dist\/assets\/images\/ridgeway-pilates-sunset-desktop\.webp\'\)\] {
-    background-image: url('./dist/assets/images/ridgeway-pilates-sunset-desktop.webp');
-  }
-  .bg-\[url\(\'\.\/src\/assets\/images\/ridgeway-pilates-sunset-desktop\.webp\'\)\] {
-    background-image: url('./src/assets/images/ridgeway-pilates-sunset-desktop.webp');
   }
   .bg-cover {
     background-size: cover;
@@ -204,12 +186,8 @@
   .bg-center {
     background-position: center;
   }
-  .p-10 {
-    padding: calc(var(--spacing) * 10);
-  }
-  .text-4xl {
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  .bg-no-repeat {
+    background-repeat: no-repeat;
   }
   .text-ridgeway-aubergine {
     color: var(--color-ridgeway-aubergine);
