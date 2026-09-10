@@ -162,10 +162,32 @@
   }
 }
 @layer utilities {
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
+  }
   .bg-ridgeway-cream {
     background-color: var(--color-ridgeway-cream);
   }
   .text-ridgeway-aubergine {
     color: var(--color-ridgeway-aubergine);
   }
+}
+.container {
+  width: min(100% - 2rem, 1600px);
+  margin-inline: auto;
 }
