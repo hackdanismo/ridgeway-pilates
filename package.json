@@ -7,7 +7,8 @@
     "node": ">=20"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npx @tailwindcss/cli -i ./src/styles/style.css -o ./dist/styles/style.css --watch",
+    "build": "npx @tailwindcss/cli -i ./src/styles/style.css -o ./dist/styles/style.css --minify"
   },
   "repository": {
     "type": "git",

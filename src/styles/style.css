@@ -1,0 +1,13 @@
+/* Import the Tailwind CSS library from the NPM package. */
+@import "tailwindcss";
+
+/* Themes for the site branding. */
+@theme {
+  --color-ridgeway-cream: #fff8f0;
+  --color-ridgeway-peach: #f3b18c;
+  --color-ridgeway-coral: #d86b76;
+  --color-ridgeway-rose: #b74e79;
+  --color-ridgeway-plum: #72285e;
+  --color-ridgeway-aubergine: #3d1e3f;
+  --color-ridgeway-ink: #2d2130;
+}
