@@ -85,6 +85,7 @@
     <script src="src/scripts/header.js" defer></script>
     <script src="src/scripts/accordion.js" defer></script>
     <script src="src/scripts/stacking.js" defer></script>
+    <script src="src/scripts/image-accordion.js" defer></script>
 </head>
 
 <body class="bg-ridgeway-cream text-ridgeway-aubergine">
@@ -215,6 +216,109 @@
 </section>
 <!-- / Benefits -->
 
+
+<!-- Expanding image accordion -->
+<section id="classes" class="image-accordion-section">
+
+    <div class="image-accordion-heading container">
+        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-ridgeway-rose">
+            Welcome to Ridgeway Pilates
+        </p>
+
+        <h2 class="mt-4 font-serif text-4xl text-ridgeway-aubergine md:text-6xl">
+            Find your way to move.
+        </h2>
+
+        <p class="mt-5 text-ridgeway-ink/70">
+            A little time for yourself makes a world of difference.
+        </p>
+    </div>
+
+    <div class="image-accordion">
+
+        <!-- Panel 1 -->
+        <article class="image-panel is-active" data-panel="0">
+            <img
+                src="dist/images/group-classes.webp"
+                alt="Group Pilates class"
+                class="image-panel__image"
+            >
+
+            <button class="image-panel__trigger" type="button"
+                    aria-expanded="true">
+                <span class="image-panel__number">01 / Move together</span>
+                <span class="image-panel__title">Group classes</span>
+            </button>
+
+            <div class="image-panel__details">
+                <p>
+                    Move with confidence in a welcoming,
+                    supportive environment. Pilates for every
+                    stage of your journey.
+                </p>
+
+                <a href="#pricing" class="image-panel__link">
+                    Explore classes &rarr;
+                </a>
+            </div>
+        </article>
+
+        <!-- Panel 2 -->
+        <article class="image-panel" data-panel="1">
+            <img
+                src="dist/images/private-sessions.webp"
+                alt="Private Pilates session"
+                class="image-panel__image"
+            >
+
+            <button class="image-panel__trigger" type="button"
+                    aria-expanded="false">
+                <span class="image-panel__number">02 / Just for you</span>
+                <span class="image-panel__title">Private sessions</span>
+            </button>
+
+            <div class="image-panel__details">
+                <p>
+                    One-to-one guidance with a personal approach
+                    to your movement and goals.
+                </p>
+
+                <a href="#pricing" class="image-panel__link">
+                    Find out more &rarr;
+                </a>
+            </div>
+        </article>
+
+        <!-- Panel 3 -->
+        <article class="image-panel" data-panel="2">
+            <img
+                src="dist/images/wellbeing.webp"
+                alt="Mindful Pilates and stretching"
+                class="image-panel__image"
+            >
+
+            <button class="image-panel__trigger" type="button"
+                    aria-expanded="false">
+                <span class="image-panel__number">03 / Feel your best</span>
+                <span class="image-panel__title">Your wellbeing</span>
+            </button>
+
+            <div class="image-panel__details">
+                <p>
+                    Build strength, improve mobility and reconnect
+                    with yourself through mindful movement.
+                </p>
+
+                <a href="#faq" class="image-panel__link">
+                    Discover more &rarr;
+                </a>
+            </div>
+        </article>
+
+    </div>
+
+</section>
+<!-- / Expanding image accordion -->
 
 
         <!-- Pricing + FAQs -->
