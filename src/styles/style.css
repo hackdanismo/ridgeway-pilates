@@ -668,3 +668,273 @@
     opacity: 0.5;
 
 }
+
+/* Meet Julia */
+
+.julia-section {
+    padding: 6rem 0;
+    background: var(--color-ridgeway-cream);
+    color: var(--color-ridgeway-aubergine);
+}
+
+.julia-intro {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    align-items: center;
+    gap: clamp(2rem, 5vw, 5rem);
+    padding: clamp(2rem, 5vw, 4rem);
+    border-radius: 2rem;
+    background: color-mix(
+        in srgb,
+        var(--color-ridgeway-peach) 22%,
+        white
+    );
+}
+
+.julia-intro__image-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.julia-intro__image {
+    width: min(100%, 320px);
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 10px solid var(--color-ridgeway-cream);
+    box-shadow: 0 14px 35px rgb(61 30 63 / 14%);
+}
+
+.julia-intro__eyebrow,
+.julia-moments__eyebrow {
+    margin-bottom: 1rem;
+    color: var(--color-ridgeway-rose);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+
+.julia-intro__content h2 {
+    margin-bottom: 1.25rem;
+    font-family: Georgia, serif;
+    font-size: clamp(2.4rem, 5vw, 4.5rem);
+    line-height: 1.05;
+    color: var(--color-ridgeway-aubergine);
+}
+
+.julia-intro__content p {
+    max-width: 42rem;
+    color: rgb(45 33 48 / 75%);
+    line-height: 1.9;
+}
+
+.julia-intro__content p + p {
+    margin-top: 1rem;
+}
+
+.julia-intro__signature {
+    margin-top: 1.5rem;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 1.9rem;
+    color: var(--color-ridgeway-rose);
+}
+
+.julia-moments {
+    margin-top: 2rem;
+    padding: clamp(2rem, 4vw, 3rem);
+}
+
+.julia-moments__heading {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.julia-moments__heading h3 {
+    margin-bottom: 0.75rem;
+    font-family: Georgia, serif;
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    line-height: 1.1;
+    color: var(--color-ridgeway-aubergine);
+}
+
+.julia-moments__heading > p:last-child {
+    color: rgb(45 33 48 / 65%);
+}
+
+.julia-moments__grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+.julia-card {
+    position: relative;
+    min-width: 0;
+    aspect-ratio: 3 / 4;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    perspective: 1200px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.julia-card__inner {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 700ms cubic-bezier(.22, 1, .36, 1);
+}
+
+.julia-card.is-flipped .julia-card__inner {
+    transform: rotateY(180deg);
+}
+
+.julia-card__face {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 1px solid rgb(61 30 63 / 8%);
+    box-shadow: 0 8px 24px rgb(61 30 63 / 10%);
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.julia-card__face--front {
+    transform: rotateY(0deg);
+}
+
+.julia-card__face--back {
+    justify-content: center;
+    padding: 1.5rem;
+    background: color-mix(
+        in srgb,
+        var(--color-ridgeway-peach) 20%,
+        white
+    );
+    transform: rotateY(180deg);
+}
+
+.julia-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex: 1;
+}
+
+.julia-card__label {
+    display: block;
+    padding: 0.9rem 1rem 1rem;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    text-align: center;
+    color: var(--color-ridgeway-aubergine);
+    background: white;
+}
+
+.julia-card__face--back strong {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-family: Georgia, serif;
+    font-size: 1.35rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--color-ridgeway-aubergine);
+}
+
+.julia-card__face--back p {
+    color: rgb(45 33 48 / 75%);
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.julia-card:hover .julia-card__face--front,
+.julia-card:focus-visible .julia-card__face--front {
+    box-shadow: 0 16px 28px rgb(61 30 63 / 16%);
+}
+
+.julia-card:focus-visible {
+    outline: 2px solid var(--color-ridgeway-rose);
+    outline-offset: 0.25rem;
+    border-radius: 1rem;
+}
+
+.julia-moments__note {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: rgb(183 78 121 / 80%);
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .julia-intro {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .julia-intro__content p {
+        margin-inline: auto;
+    }
+
+    .julia-moments__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .julia-section {
+        padding: 5rem 0;
+    }
+
+    .julia-intro {
+        padding: 2rem 1.5rem;
+        border-radius: 1.5rem;
+    }
+
+    .julia-intro__image {
+        width: min(100%, 220px);
+    }
+
+    .julia-intro__content h2 {
+        font-size: clamp(2rem, 9vw, 3rem);
+    }
+
+    .julia-moments {
+        padding: 2rem 0 0;
+    }
+
+    .julia-moments__grid {
+        gap: 1rem;
+    }
+
+    .julia-card__face--back {
+        padding: 1.1rem;
+    }
+
+    .julia-card__face--back strong {
+        font-size: 1.1rem;
+    }
+
+    .julia-card__face--back p {
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .julia-card__inner {
+        transition: none;
+    }
+}
