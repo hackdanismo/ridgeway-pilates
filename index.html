@@ -87,6 +87,7 @@
     <script src="src/scripts/stacking.js" defer></script>
     <script src="src/scripts/image-accordion.js" defer></script>
     <script src="src/scripts/flip-cards.js" defer></script>
+    <script src="src/scripts/testimonials.js" defer></script>
 </head>
 
 <body class="bg-ridgeway-cream text-ridgeway-aubergine">
@@ -1366,6 +1367,7 @@
 
 
         <!-- Banner -->
+         <!--
         <section
             class="
                 min-h-[400px]
@@ -1374,8 +1376,122 @@
                 bg-center
             "
         >
-        </section>
+        </section>-->
         <!-- / Banner -->
+
+
+<!-- Banner / Testimonials -->
+<section
+    id="testimonials"
+    class="
+        testimonials-banner
+        min-h-[400px]
+        bg-[url('../images/ridgeway-pilates-sunset-desktop.webp')]
+        bg-cover
+        bg-center
+        bg-no-repeat
+    "
+    aria-labelledby="testimonials-title"
+>
+    <div class="container testimonials-banner__container">
+
+        <div class="testimonials-carousel">
+
+            <p class="testimonials-carousel__eyebrow">
+                Kind words
+            </p>
+
+            <h2
+                id="testimonials-title"
+                class="testimonials-carousel__heading"
+            >
+                What our clients say.
+            </h2>
+
+            <div class="testimonials-carousel__slides" aria-live="polite">
+
+                <!-- Placeholder reviews — replace with genuine testimonials -->
+                <figure class="testimonial-slide is-active">
+                    <blockquote>
+                        “Such a welcoming environment. I always leave
+                        feeling stronger, calmer and ready for the
+                        week ahead.”
+                    </blockquote>
+                    <figcaption>Client review 01</figcaption>
+                </figure>
+
+                <figure class="testimonial-slide" hidden>
+                    <blockquote>
+                        “A lovely way to make time for yourself,
+                        with thoughtful guidance and a friendly
+                        atmosphere.”
+                    </blockquote>
+                    <figcaption>Client review 02</figcaption>
+                </figure>
+
+                <figure class="testimonial-slide" hidden>
+                    <blockquote>
+                        “Each session feels encouraging and approachable,
+                        with movement that suits your own pace.”
+                    </blockquote>
+                    <figcaption>Client review 03</figcaption>
+                </figure>
+
+            </div>
+
+            <div class="testimonials-carousel__controls">
+
+                <button
+                    class="testimonials-carousel__arrow"
+                    type="button"
+                    data-testimonial-prev
+                    aria-label="Previous testimonial"
+                >
+                    &larr;
+                </button>
+
+                <div
+                    class="testimonials-carousel__dots"
+                    aria-label="Choose testimonial"
+                >
+                    <button
+                        type="button"
+                        class="is-active"
+                        data-testimonial-dot="0"
+                        aria-label="Show testimonial 1"
+                        aria-current="true"
+                    ></button>
+
+                    <button
+                        type="button"
+                        data-testimonial-dot="1"
+                        aria-label="Show testimonial 2"
+                    ></button>
+
+                    <button
+                        type="button"
+                        data-testimonial-dot="2"
+                        aria-label="Show testimonial 3"
+                    ></button>
+                </div>
+
+                <button
+                    class="testimonials-carousel__arrow"
+                    type="button"
+                    data-testimonial-next
+                    aria-label="Next testimonial"
+                >
+                    &rarr;
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- / Banner / Testimonials -->
+
 
     </main>
 
